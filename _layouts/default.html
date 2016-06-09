@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    <div class="page" id="page">
+      {% include header.html %}
+
+      <article data-swiftype-name="body" data-swiftype-type="text">
+        <div class="row">
+          <div class="large-24 columns">
+            <h1 class="contrast">{{ page.title }}</h1>
+            {{ content }}
+          </div>
+        </div>
+      </article>
+    </div><!-- End #page -->
+    {% include footer.html %}
+
+    {% include scripts.html %}
+  </body>
+</html>
