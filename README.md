@@ -1,6 +1,5 @@
-# Patterns - Jekyll Boilerplate
-This repository is a boilerplate jekyll site using the City of Philadelphia's
-[pattern portfolio](https://github.com/cityofphiladelphia/patterns)
+# Sustainability Dashboard
+This is a proof-of-concept dashboard for the Office of Sustainability.
 
 ## Usage
 Clone the repository and run the site locally using:

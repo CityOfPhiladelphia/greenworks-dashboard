@@ -1,0 +1,113 @@
+/* TOOLTIPS */
+.chartist-tooltip:before{
+  border-top-color: #444444;
+}
+.chartist-tooltip {
+  background: #444444;
+  color: white;
+}
+
+/* BAR COLORS */
+svg > g:nth-child(2) > g > line:nth-child(1) {
+  stroke: #e7494b;
+}
+svg > g:nth-child(2) > g > line:nth-child(2) {
+  stroke: #ef2477;
+}
+svg > g:nth-child(2) > g > line:nth-child(3) {
+  stroke: #f99300;
+}
+svg > g:nth-child(2) > g > line:nth-child(4) {
+  stroke: #f2e205;
+}
+svg > g:nth-child(2) > g > line:nth-child(5) {
+  stroke: #a8bf12;
+}
+svg > g:nth-child(2) > g > line:nth-child(6) {
+  stroke: #918a09;
+}
+svg > g:nth-child(2) > g > line:nth-child(7) {
+  stroke: #00aab5;
+}
+svg > g:nth-child(2) > g > line:nth-child(8) {
+  stroke: #7fc5dc;
+}
+svg > g:nth-child(2) > g > line:nth-child(9) {
+  stroke: #3661a2;
+}
+svg > g:nth-child(2) > g > line:nth-child(10) {
+  stroke: #5e91e5;
+}
+svg > g:nth-child(2) > g > line:nth-child(11) {
+  stroke: #96c9ff;
+}
+svg > g:nth-child(2) > g > line:nth-child(12) {
+  stroke: #9299a5;
+}
+
+/* Use this selector to override the line style on a given series */
+.ct-series-a .ct-line {
+  /* Set the colour of this series line */
+  stroke: #96c9ff;
+  /* Control the thickness of your lines */
+  stroke-width: 4px;
+  /* Create a dashed line with a pattern */
+/*  stroke-dasharray: 10px 20px;*/
+}
+/* This selector overrides the points style on line charts.
+Points on line charts are actually just very short strokes. This allows you to customize even the point size in CSS */
+.ct-series-a .ct-point {
+  /* Colour of your points */
+  stroke: #2176d2!important;
+  /* Size of your points */
+  stroke-width: 8px;
+  /* Make your points appear as squares */
+  /*  stroke-linecap: square;*/
+}
+.ct-series-a .ct-area, .ct-series-a .ct-slice-pie {
+  fill: #2176d2;
+}
+/* Use this selector to override bar styles on bar charts.
+Bars are also strokes so you have maximum freedom in styling them. */
+.ct-bar {
+  /* The width of your bars */
+  stroke-width: 4%;
+}
+.ct-series-a .ct-bar {
+  /* Colour of your bars */
+  stroke: #2176d2;
+}
+.ct-series-b .ct-bar {
+  /* Colour of your bars */
+  stroke: #f99300;
+}
+
+/*RESPONSIVE CHART STYLES*/
+@media (max-width: 450px) {
+  h1 {
+    font-size: 1rem;
+  }
+  .ct-bar {
+    stroke-width: 3%;
+  }
+  .ct-label {
+    font-size: 0.5rem!important;
+  }
+  .ct-series-a .ct-point {
+    stroke-width: 6px;
+  }
+  .ct-series-a .ct-line {
+    stroke-width: 3px;
+  }
+  .to-top {
+    display: none;
+  }
+}
+@media (min-width: 451px) {
+  .ct-bar {
+    /*stroke-width: 4%;*/
+  }
+  .ct-label {
+    font-size: 0.8rem!important
+  }
+}
