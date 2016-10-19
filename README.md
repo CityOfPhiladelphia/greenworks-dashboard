@@ -1,4 +1,4 @@
-# Sustainability Dashboard
+# Greenworks Dashboard
 This is a proof-of-concept dashboard for the Office of Sustainability.
 
 ## Usage
