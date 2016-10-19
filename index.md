@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sustainability Dashboard
+title: Greenworks Dashboard
 ---
 <h2>Outdoor air quality</h2>
 <div class="row">
