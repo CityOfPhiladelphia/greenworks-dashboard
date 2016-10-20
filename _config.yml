@@ -1,7 +1,7 @@
 title: Greenworks Dashboard
 baseurl: /greenworks-dashboard
 
-search: True
+search: False
 
 # Prose configuration
 # set ignore parameter to hide files we don't want available to edit
