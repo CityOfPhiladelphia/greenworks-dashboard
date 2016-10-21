@@ -2,7 +2,7 @@
   <script>
   (function () {
     // Pass data from Jekyll/liquid to JavaScript
-    var rows = {{ site.data.snap_participation | jsonify }}
+    var rows = {{ site.data.planted_trees | jsonify }}
 
     var opts = {
       type: 'bar',
@@ -10,29 +10,19 @@
         labels: pluck(rows, 'Year'),
         datasets: [
           {
-            label: 'SNAP',
-            data: pluck(rows, 'SNAP'),
+            label: 'Street Trees Planted',
+            data: pluck(rows, 'Street Trees Planted'),
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgba(255,99,132,1)',
             borderWidth: 1
           },
           {
-            label: 'Philly Food Bucks',
-            data: pluck(rows, 'Philly Food Bucks'),
+            label: 'Yard Trees Planted',
+            data: pluck(rows, 'Yard Trees Planted'),
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
             borderColor: 'rgba(54, 162, 235, 1)'
           }
         ]
-	},
-	  options: {
-        scales: {
-            xAxes: [{
-                stacked: true
-            }],
-            yAxes: [{
-                stacked: true
-            }]
-        }
       }
     }
 

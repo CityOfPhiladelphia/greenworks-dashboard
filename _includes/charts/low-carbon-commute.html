@@ -1,0 +1,69 @@
+<canvas width="600" height="400">
+  <script>
+  (function () {
+    // Pass data from Jekyll/liquid to JavaScript
+    var rows = {{ site.data.low_carbon_commute | jsonify }}
+
+		/* This combined chart type will need a 2nd custom scale due to difference in data domains
+		   See http://www.chartjs.org/docs/#advanced-usage-writing-new-scale-types  */
+
+	    var opts = {
+      type: 'bar',
+      data: {
+        labels: pluck(rows, 'Year'),
+        datasets: [
+          {
+            label: 'Drove alone',
+            data: pluck(rows, 'Car, truck, or van -- drove alone'),
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255,99,132,1)',
+      //      borderWidth: 1
+          },
+          {
+            label: 'Carpooled',
+            data: pluck(rows, 'Car, truck, or van -- drove alone'),
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)'
+          },
+          {
+            label: 'Public Transit',
+            data: pluck(rows, 'Public transportation (excluding taxicab)'),
+            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+            borderColor: 'rgba(255, 206, 86, 1)'
+          },
+					{
+						label: 'Biked',
+						data: pluck(rows, 'Biked'),
+						backgroundColor: 'rgba(255, 106, 86, 0.2)',
+						borderColor: 'rgba(255, 106, 86, 1)'
+					},
+					{
+						label: 'Other',
+						data: pluck(rows, 'Other means'),
+						backgroundColor: 'rgba(55, 106, 86, 0.2)',
+						borderColor: 'rgba(55, 106, 86, 1)'
+					},
+					{
+						label: 'Work from Home',
+						data: pluck(rows, 'Worked at Home'),
+						backgroundColor: 'rgba(55, 206, 86, 0.2)',
+						borderColor: 'rgba(55, 206, 86, 1)'
+					}
+        ]
+      },
+			options: {
+        scales: {
+          yAxes: [{
+            stacked: true
+          }],
+					xAxes: [{
+            stacked: true
+          }]
+        }
+    	}
+    }
+
+    new Chart(getScriptParent(), opts)
+  })()
+  </script>
+</canvas>

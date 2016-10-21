@@ -1,0 +1,55 @@
+<canvas width="600" height="400">
+  <script>
+  (function () {
+    // Pass data from Jekyll/liquid to JavaScript
+    var rows = {{ site.data.citywide_energy_usage | jsonify }}
+
+
+/* This combined chart type will need a 2nd custom scale due to difference in data domains
+   See http://www.chartjs.org/docs/#advanced-usage-writing-new-scale-types  */
+
+    var opts = {
+      type: 'bar',
+      data: {
+        labels: pluck(rows, 'Year'),
+        datasets: [
+          {
+					//	type: 'bar',
+						label: 'Heating Degree Days  - base 65',
+            data: pluck(rows, 'Heating Degree Days'),
+            backgroundColor: 'rgba(150,201,255,0.2)',
+            borderColor: 'rgba(150,201,255,1)',
+            borderWidth: 1
+          },
+          {
+					//	type: 'bar',
+            label: 'Cooling Degree Days - base 65',
+            data: pluck(rows, 'Cooling Degree Days'),
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: '#f99300'
+		  		},
+				  {
+					//	type: 'bar',
+						label: 'Citywide Energy Usage (mmBtus)',
+	          data: pluck(rows, 'Citywide Energy Usage'),
+	          backgroundColor: 'rgba(54, 88, 235, 0.2)',
+	          borderColor: '#ef2477'
+		  		}
+        ]
+			}
+		//   options: {
+    //     scales: {
+    //         xAxes: [{
+    //             stacked: true
+    //         }],
+    //         yAxes: [{
+    //             stacked: true
+    //         }]
+    //     }
+    //   }
+    }
+
+    new Chart(getScriptParent(), opts)
+  })()
+  </script>
+</canvas>
