@@ -33,10 +33,10 @@ title: Greenworks Dashboard
   </div>
 </div>
 
-<h2>Citywide Energy Useage</h2>
+<h2>Citywide Energy Usage</h2>
 <div class="row pbl">
   <div class="medium-16 column">
-    {% include charts/citywide-energy-useage.html %}
+    {% include charts/citywide-energy-usage.html %}
   </div>
   <div class="medium-8 column end">
     <aside class="related plm-mu">
