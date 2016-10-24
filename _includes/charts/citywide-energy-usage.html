@@ -17,27 +17,33 @@
 					//	type: 'bar',
 						label: 'Heating Degree Days  - base 65',
             data: pluck(rows, 'Heating Degree Days'),
-            backgroundColor: 'rgba(150,201,255,0.2)',
-            borderColor: 'rgba(150,201,255,1)',
-            borderWidth: 1
-          },
+            backgroundColor: 'rgba(231, 73, 75, 1)',
+            borderColor: 'rgba(231, 73, 75, 1)'          },
           {
 					//	type: 'bar',
             label: 'Cooling Degree Days - base 65',
             data: pluck(rows, 'Cooling Degree Days'),
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: '#f99300'
-		  		},
-				  {
-					//	type: 'bar',
-						label: 'Citywide Energy Usage (mmBtus)',
-	          data: pluck(rows, 'Citywide Energy Usage'),
-	          backgroundColor: 'rgba(54, 88, 235, 0.2)',
-	          borderColor: '#ef2477'
+						backgroundColor: 'rgba(127, 197, 220, 1)',
+						borderColor: 'rgba(54, 162, 235, 1)'
 		  		}
+				  // {
+					// //	type: 'bar',
+					// 	label: 'Citywide Energy Usage (mmBtus)',
+	        //   data: pluck(rows, 'Citywide Energy Usage'),
+	        //   backgroundColor: rgba(168, 191, 18, 1)',
+	        //   borderColor: 'rgba(168, 191, 18, 1)'
+		  		// }
         ]
-			}
-		//   options: {
+			},
+		  options: {
+				legend: {
+					position: 'bottom'
+				},
+				title: {
+					display: true,
+					position: 'top',
+					text: 'Weather Trends and Citywide Energy Usage'
+				}
     //     scales: {
     //         xAxes: [{
     //             stacked: true
@@ -46,7 +52,7 @@
     //             stacked: true
     //         }]
     //     }
-    //   }
+      }
     }
 
     new Chart(getScriptParent(), opts)

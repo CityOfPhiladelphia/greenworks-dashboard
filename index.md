@@ -10,8 +10,8 @@ title: Greenworks Dashboard
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-      <!-- <h4>Vision</h4> -->
-      <p>All Philadelphians have access to healthy, affordable, and sustainable food and drinking water</p>
+      <h4 class="pbxl">All Philadelphians have access to healthy, affordable, and sustainable food and drinking water</h4>
+
 			<h6>Note</h6>
 			<p>This can be used for notes about the data, or hidden if unused.</p>
 	  	<h6>Source</h6>
@@ -27,10 +27,10 @@ title: Greenworks Dashboard
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-      <!-- <h4>Vision</h4> -->
-      <p>All Philadelphians breathe healthy air inside and outside.</p>
+      <h4 class="pbxl">All Philadelphians breathe healthy air inside and outside.</h4>
 			<!-- <h6>Note</h6>
 	    <p></p> -->
+
 			<h6>Source</h6>
 	  	<p>U.S. Environmental Protection Agency</p>
     </aside>
@@ -44,10 +44,11 @@ title: Greenworks Dashboard
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-      <!-- <h4>Vision</h4> -->
-      <p>All Philadelphians efficiently use clean energy that they can afford.</p>
-			<!-- <h6>Note</h6>
-			<p></p> -->
+      <!-- <h4 class="pbxl">Vision</h4> -->
+      <h4 class="pbxl">All Philadelphians efficiently use clean energy that they can afford.</h4>
+
+			<h6>Note</h6>
+			<p>Citywide Energy Usage (mmBtus) metric needs a custom scale to appear on the same chart - domain too large to adequately display all three measures together.</p>
 	  	<h6>Source</h6>
 	  	<p>City of Philadelphia Energy Office</p>
     </aside>
@@ -61,8 +62,8 @@ title: Greenworks Dashboard
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-    <!-- <h4>Vision</h4> -->
-	  	<p>All Philadelphians are prepared for climate change and reduce carbon pollution.</p>
+	  	<h4 class="pbxl">All Philadelphians are prepared for climate change and reduce carbon pollution.</h4>
+
 	  	<!-- <h6>Note</h6>
       <p></p> -->
 	  	<h6>Source</h6>
@@ -78,8 +79,8 @@ title: Greenworks Dashboard
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-    <!-- <h4>Vision</h4> -->
-	  	<p>Philadelphians benefit from  parks, trees, stormwater management, and healthy waterways.</p>
+	  	<h4 class="pbxl">Philadelphians benefit from  parks, trees, stormwater management, and healthy waterways.</h4>
+
 	  	<!-- <h6>Note</h6>
       <p></p> -->
 	  	<h6>Source</h6>
@@ -95,8 +96,8 @@ title: Greenworks Dashboard
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-    <!-- <h4>Vision</h4> -->
-	  	<p>All Philadelphians have access to safe, affordable, and low-carbon transportation.</p>
+	  	<h4 class="pbxl">All Philadelphians have access to safe, affordable, and low-carbon transportation.</h4>
+
 	  	<!-- <h6>Note</h6>
       <p></p> -->
 	  	<h6>Source</h6>
@@ -112,8 +113,8 @@ title: Greenworks Dashboard
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-    	<!-- <h4>Vision</h4> -->
-	  	<p>All Philadelphians waste less and keep our neighborhoods clean.</p>
+	  	<h4 class="pbxl">All Philadelphians waste less and keep our neighborhoods clean.</h4>
+
 		  <!-- <h6>Note</h6>
 	    <p></p> -->
 	  	<h6>Source</h6>
@@ -127,9 +128,13 @@ title: Greenworks Dashboard
   <div class="medium-16 column prxl">
     {% include charts/engaged-philadelphians.html %}
   </div>
+	<div class="medium-16 column prxl">
+		{% include charts/engaged-philadelphians-spring-cleanup.html %}
+	</div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-	  	<p>All Philadelphians benefit from sustainability education, employment, and business opportunities.</p>
+	  	<h4 class="pbxl">All Philadelphians benefit from sustainability education, employment, and business opportunities.</h4>
+
 	  	<!-- <h6>Note</h6>
       <p></p> -->
 	  	<h6>Source</h6>

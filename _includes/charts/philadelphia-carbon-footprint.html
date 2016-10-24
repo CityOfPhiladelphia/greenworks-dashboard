@@ -10,45 +10,52 @@
         labels: pluck(rows, 'Year'),
         datasets: [
           {
-			type: 'bar',
-			label: 'Buildings',
+						// type: 'bar',
+						label: 'Buildings',
             data: pluck(rows, 'Buildings'),
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255,99,132,1)',
-            borderWidth: 0
+						backgroundColor: 'rgba(54, 97, 162, 1)',
+						borderColor: 'rgba(54, 97, 162, 1)'
           },
           {
-			type: 'bar',
+						// type: 'bar',
             label: 'Transportation',
             data: pluck(rows, 'Transportation'),
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)'
-		  },
-		  {
-		  type: 'bar',
-			label: 'Other',
-			data: pluck(rows, 'Other (Waste and Industrial Emissions)'),
-			backgroundColor: 'rgba(54, 162, 235, 0.2)',
-			borderColor: 'rgba(54, 162, 135, 1)'
-		},
-		  {
-			type: 'bar',
-			label: 'Goal',
-            data: pluck(rows, 'Total'),
-            backgroundColor: 'rgba(54, 88, 235, 0.2)',
-            borderColor: 'rgba(54, 88, 235, 1)'
-		  }
-        ]
-	},
-	  options: {
-        scales: {
+						backgroundColor: 'rgba(127, 197, 220, 1)',
+						borderColor: 'rgba(54, 162, 235, 1)'
+					},
+					{
+					  // type: 'bar',
+						label: 'Other (Waste and Industrial Emissions)',
+						data: pluck(rows, 'Other'),
+						backgroundColor: 'rgba(168, 191, 18, 1)',
+						borderColor: 'rgba(145, 158, 9, 1)'
+					}
+					// {
+					// 	type: 'bar',
+					// 	label: 'Goal',
+          //   data: pluck(rows, 'Total'),
+					// 	backgroundColor: 'rgba(0, 170, 181, 1)',
+          //   borderColor: 'rgba(0, 170, 181, 1)'
+					//   }
+    		]
+			},
+	  	options: {
+				title: {
+					display: true,
+					text: 'Citywide Greenhouse Gas Emissions, 2006-14',
+					position: 'top'
+				},
+				scales: {
             xAxes: [{
                 stacked: true
             }],
             yAxes: [{
                 stacked: true
             }]
-        }
+        },
+				legend: {
+					position: 'bottom'
+				}
       }
     }
 

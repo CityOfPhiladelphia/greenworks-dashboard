@@ -9,26 +9,43 @@
       data: {
         labels: pluck(rows, 'Year'),
         datasets: [
+					{
+						label: 'Waste to Energy',
+						data: pluck(rows, 'Waste to Energy'),
+						backgroundColor: 'rgba(127, 197, 220, 0.8)',
+						borderColor: 'rgba(54, 162, 235, 1)',
+						borderWidth: 3
+					},
+					{
+						label: 'Landfill',
+						data: pluck(rows, 'Landfill'),
+						backgroundColor: 'rgba(231, 53, 75, 0.5)',
+						borderColor: 'rgba(231, 53, 75, 1)',
+						borderWidth: 3
+					},
           {
             label: 'Recycling',
             data: pluck(rows, 'Recycling'),
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255,99,132,1)',
-            borderWidth: 1
-          },
-          {
-            label: 'Waste to Energy',
-            data: pluck(rows, 'Waste to Energy'),
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)'
-          },
-          {
-            label: 'Landfill',
-            data: pluck(rows, 'Landfill'),
-            backgroundColor: 'rgba(255, 206, 86, 0.2)',
-            borderColor: 'rgba(255, 206, 86, 1)'
+						backgroundColor: 'rgba(168, 191, 18, 0.6)',
+						borderColor: 'rgba(145, 158, 9, 1)',
+						borderWidth: 3
           }
-        ]
+        ],
+				options: {
+					legend: {
+						position: 'bottom'
+					},
+					options: {
+        scales: {
+            yAxes: [{
+                stacked: true
+            }],
+						xAxes: [{
+                stacked: true
+            }]
+        }
+    }
+				}
       }
     }
 
