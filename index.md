@@ -37,14 +37,9 @@ title: Greenworks Dashboard
   </div>
 </div>
 
-<<<<<<< HEAD
 <h2>Vision 3: Clean and Efficient Energy</h2>
 <div class="row pbxl ptl">
   <div class="medium-16 column prxl">
-=======
-<h2>Citywide Energy Usage</h2>
-<div class="row pbl">
-  <div class="medium-16 column">
     {% include charts/citywide-energy-usage.html %}
   </div>
   <div class="medium-8 column end">
