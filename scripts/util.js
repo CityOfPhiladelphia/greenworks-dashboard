@@ -9,3 +9,6 @@ function getScriptParent () {
   var thisScriptEl = scriptEls[scriptEls.length - 1]
   return thisScriptEl.parentNode
 }
+
+// Can we handle some of the numeric formatting here?
+// (Locale, rounding for sets in millions?)
