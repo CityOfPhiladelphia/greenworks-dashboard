@@ -3,6 +3,22 @@ layout: default
 title: Greenworks Dashboard
 ---
 
+<script>
+Chart.scaleService.updateScaleDefaults('linear', {
+	ticks: {
+		callback: function (value) {
+			return (+value).toLocaleString();
+		}
+	}
+})
+
+Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
+	var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || '';
+	return datasetLabel + ': ' + (+tooltipItem.yLabel).toLocaleString();
+}
+
+</script>
+
 <h2 class="ptl">Vision 1: Accessible Food and Drinking Water</h2>
 <div class="row pbxl ptl">
   <div class="medium-16 column prxl">
