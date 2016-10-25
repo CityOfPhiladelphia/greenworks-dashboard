@@ -26,11 +26,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-      <h4 class="pbxl">All Philadelphians have access to healthy, affordable, and sustainable food and drinking water</h4>
+      <h3 class="h4 pbxl">All Philadelphians have access to healthy, affordable, and sustainable food and drinking water</h3>
 
-			<h6>Note</h6>
+			<h4 class="h6">Note</h4>
 			<p>This can be used for notes about the data, or hidden if unused.</p>
-	  	<h6>Source</h6>
+	  	<h4 class="h6">Source</h4>
 	  	<p>Get Healthy Philly</p>
     </aside>
   </div>
@@ -43,11 +43,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-      <h4 class="pbxl">All Philadelphians breathe healthy air inside and outside.</h4>
-			<!-- <h6>Note</h6>
+      <h3 class="h4 pbxl">All Philadelphians breathe healthy air inside and outside.</h3>
+			<!-- <h4 class="h6">Note</h4>
 	    <p></p> -->
 
-			<h6>Source</h6>
+			<h4 class="h6">Source</h4>
 	  	<p>U.S. Environmental Protection Agency</p>
     </aside>
   </div>
@@ -60,12 +60,12 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-      <!-- <h4 class="pbxl">Vision</h4> -->
-      <h4 class="pbxl">All Philadelphians efficiently use clean energy that they can afford.</h4>
+      <!-- <h3 class="h4 pbxl">Vision</h3> -->
+      <h3 class="h4 pbxl">All Philadelphians efficiently use clean energy that they can afford.</h3>
 
-			<h6>Note</h6>
+			<h4 class="h6">Note</h4>
 			<p>Citywide Energy Usage (mmBtus) metric needs a custom scale to appear on the same chart - domain too large to adequately display all three measures together.</p>
-	  	<h6>Source</h6>
+	  	<h4 class="h6">Source</h4>
 	  	<p>City of Philadelphia Energy Office</p>
     </aside>
   </div>
@@ -78,11 +78,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-	  	<h4 class="pbxl">All Philadelphians are prepared for climate change and reduce carbon pollution.</h4>
+	  	<h3 class="h4 pbxl">All Philadelphians are prepared for climate change and reduce carbon pollution.</h3>
 
-	  	<!-- <h6>Note</h6>
+	  	<!-- <h4 class="h6">Note</h4>
       <p></p> -->
-	  	<h6>Source</h6>
+	  	<h4 class="h6">Source</h4>
 	  	<p>City of Philadelphia Energy Office</p>
     </aside>
   </div>
@@ -95,11 +95,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-	  	<h4 class="pbxl">Philadelphians benefit from  parks, trees, stormwater management, and healthy waterways.</h4>
+	  	<h3 class="h4 pbxl">Philadelphians benefit from  parks, trees, stormwater management, and healthy waterways.</h3>
 
-	  	<!-- <h6>Note</h6>
+	  	<!-- <h4 class="h6">Note</h4>
       <p></p> -->
-	  	<h6>Source</h6>
+	  	<h4 class="h6">Source</h4>
 	  	<p>City of Philadelphia Parks and Recreation</p>
     </aside>
   </div>
@@ -112,11 +112,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-	  	<h4 class="pbxl">All Philadelphians have access to safe, affordable, and low-carbon transportation.</h4>
+	  	<h3 class="h4 pbxl">All Philadelphians have access to safe, affordable, and low-carbon transportation.</h3>
 
-	  	<!-- <h6>Note</h6>
+	  	<!-- <h4 class="h6">Note</h4>
       <p></p> -->
-	  	<h6>Source</h6>
+	  	<h4 class="h6">Source</h4>
 	  	<p>American Community Survey</p>
     </aside>
   </div>
@@ -129,11 +129,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-	  	<h4 class="pbxl">All Philadelphians waste less and keep our neighborhoods clean.</h4>
+	  	<h3 class="h4 pbxl">All Philadelphians waste less and keep our neighborhoods clean.</h3>
 
-		  <!-- <h6>Note</h6>
+		  <!-- <h4 class="h6">Note</h4>
 	    <p></p> -->
-	  	<h6>Source</h6>
+	  	<h4 class="h6">Source</h4>
 	  	<p>City of Philadelphia Streets Department</p>
     </aside>
   </div>
@@ -149,11 +149,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	</div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-	  	<h4 class="pbxl">All Philadelphians benefit from sustainability education, employment, and business opportunities.</h4>
+	  	<h3 class="h4 pbxl">All Philadelphians benefit from sustainability education, employment, and business opportunities.</h3>
 
-	  	<!-- <h6>Note</h6>
+	  	<!-- <h4 class="h6">Note</h4>
       <p></p> -->
-	  	<h6>Source</h6>
+	  	<h4 class="h6">Source</h4>
 	  	<p>City of Philadelphia Office of Sustainability and Partners</p>
     </aside>
   </div>
