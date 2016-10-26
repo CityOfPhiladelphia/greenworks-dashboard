@@ -1,7 +1,7 @@
 <canvas width="600" height="400">
   <script>
   (function () {
-    // Pass data from Jekyll/liquid to JavaScript
+  	// Pass data from Jekyll/liquid to JavaScript
     var rows = {{ site.data.waste_diversion_rate | jsonify }}
 
     var opts = {
@@ -19,7 +19,7 @@
 					{
 						label: 'Landfill',
 						data: pluck(rows, 'Landfill'),
-						backgroundColor: 'rgba(231, 53, 75, 0.5)',
+						backgroundColor: 'rgba(231, 53, 75, 0.8)',
 						borderColor: 'rgba(231, 53, 75, 1)',
 						borderWidth: 3
 					},
@@ -32,20 +32,12 @@
           }
         ],
 				options: {
-					legend: {
-						position: 'bottom'
-					},
-					options: {
-        scales: {
+        	scales: {
             yAxes: [{
-                stacked: true
-            }],
-						xAxes: [{
-                stacked: true
+              stacked: true
             }]
-        }
-    }
-				}
+					}
+    		}
       }
     }
 

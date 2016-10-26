@@ -2,8 +2,12 @@
 layout: default
 title: Greenworks Dashboard
 ---
-
 <script>
+// Chart Globals
+Chart.defaults.global.legend.position = 'bottom';
+
+// Format numbers with commas in charts
+
 Chart.scaleService.updateScaleDefaults('linear', {
 	ticks: {
 		callback: function (value) {
@@ -12,11 +16,12 @@ Chart.scaleService.updateScaleDefaults('linear', {
 	}
 })
 
+// Format numbers with commas in tooltips
+
 Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || '';
 	return datasetLabel + ': ' + (+tooltipItem.yLabel).toLocaleString();
 }
-
 </script>
 
 <h2 class="ptl">Vision 1: Accessible Food and Drinking Water</h2>

@@ -12,27 +12,30 @@
           {
             label: 'Greenworks Update',
             data: pluck(rows, 'Greenworks Update'),
-            backgroundColor: '#ef2477',
-            borderColor: '#ef2477',
-            borderWidth: 1
+            backgroundColor: 'rgba(239, 36, 119, 0.6)',
+            borderColor: 'rgba(239, 36, 119, 1)',
+            borderWidth: 3
           },
           {
             label: 'Powercorps',
             data: pluck(rows, 'Powercorps'),
-            backgroundColor: '#96c9ff',
-            borderColor: '#96c9ff'
+            backgroundColor: 'rgba(150, 201, 255, 0.8)',
+            borderColor: 'rgba(150, 201, 255, 1)',
+						borderWidth: 3
           },
           {
             label: 'Waste Watchers',
             data: pluck(rows, 'Waste Watchers'),
-            backgroundColor: '#f2e205',
-            borderColor: '#f2e205'
+            backgroundColor: 'rgba(242, 226, 5, 0.6)',
+            borderColor: 'rgba(242, 226, 5, 1)',
+						borderWidth: 3
 				  },
 					{
 		    	  label: 'ECA Trainees',
 				    data: pluck(rows, 'ECA Trainees'),
 				    backgroundColor: 'rgba(255, 106, 86, 0.8)',
-				    borderColor: 'rgba(255, 106, 86, 1)'
+				    borderColor: 'rgba(255, 106, 86, 1)',
+						borderWidth: 3
 					}
         ]
 			},
@@ -41,10 +44,6 @@
 					display: true,
 					text: 'Philadelphians Engaged in Sustainability',
 					position: 'top'
-				},
-				legend: {
-					display: true,
-					position: 'bottom'
 				}
 			}
     }

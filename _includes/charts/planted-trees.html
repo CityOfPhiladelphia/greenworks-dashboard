@@ -12,24 +12,19 @@
           {
             label: 'Street Trees Planted',
             data: pluck(rows, 'Street Trees Planted'),
-						backgroundColor: 'rgba(127, 197, 220, 1)',
+						backgroundColor: 'rgba(127, 197, 220, 0.8)',
             borderColor: 'rgba(54, 162, 235, 1)',
             borderWidth: 0
           },
           {
             label: 'Yard Trees Planted',
             data: pluck(rows, 'Yard Trees Planted'),
-						backgroundColor: 'rgba(168, 191, 18, 1)',
+						backgroundColor: 'rgba(168, 191, 18, 0.8)',
 						borderColor: 'rgba(145, 158, 9, 1)',
 						borderWidth: 0
           }
         ]
-			},
-			options: {
-				legend: {
-					position: 'bottom'
-				}
-			}
+      }
     }
 
     new Chart(getScriptParent(), opts)
