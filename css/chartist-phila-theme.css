@@ -9,40 +9,40 @@
 
 /* BAR COLORS */
 svg > g:nth-child(2) > g > line:nth-child(1) {
-  stroke: #e7494b;
+  stroke: rgba(231, 73, 75, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(2) {
-  stroke: #ef2477;
+  stroke: rgba(239, 36, 119, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(3) {
-  stroke: #f99300;
+  stroke: rgba(249, 147, 0, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(4) {
-  stroke: #f2e205;
+  stroke: rgba(242, 226, 5, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(5) {
-  stroke: #a8bf12;
+  stroke: rgba(168, 191, 18, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(6) {
-  stroke: #918a09;
+  stroke: rgba(145, 138, 9, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(7) {
-  stroke: #00aab5;
+  stroke: rgba(0, 170, 181, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(8) {
-  stroke: #7fc5dc;
+  stroke: rgba(127, 197, 220, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(9) {
-  stroke: #3661a2;
+  stroke: rgba(54, 97, 162, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(10) {
-  stroke: #5e91e5;
+  stroke: rgba(94, 145, 229, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(11) {
-  stroke: #96c9ff;
+  stroke: rgba(150, 201, 255, 1);
 }
 svg > g:nth-child(2) > g > line:nth-child(12) {
-  stroke: #9299a5;
+  stroke: rgba(146, 153, 165, 1);
 }
 
 /* Use this selector to override the line style on a given series */

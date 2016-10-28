@@ -30,15 +30,20 @@
 						borderColor: 'rgba(145, 158, 9, 1)',
 						borderWidth: 3
           }
-        ],
-				options: {
-        	scales: {
-            yAxes: [{
-              stacked: true
-            }]
-					}
-    		}
-      }
+        ]
+			},
+			options: {
+      	scales: {
+          yAxes: [{
+            stacked: true
+          }]
+				},
+				title: {
+					display: true,
+					text: 'Citywide Waste Diversion Rate',
+					postion: 'top'
+				}
+  		}
     }
 
     new Chart(getScriptParent(), opts)
