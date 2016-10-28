@@ -34,7 +34,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
   <div class="medium-8 column end">
     <aside class="related pll-mu">
-      <h3 class="h4 pbl">All Philadelphians have access to healthy, affordable, and sustainable food and drinking water</h3>
+      <h3 class="h4 pbl">All Philadelphians have access to healthy, affordable, and sustainable food and drinking water.</h3>
 			<!-- <h4 class="h6">Note</h4> -->
 			<p>Philadelphians can use Supplemental Nutrition Assistance Program (SNAP) benefits to purchase healthy, locally-grown food at <a href="http://thefoodtrust.org/uploads/media_items/philly-food-bucks-brochure-english.original.pdf">many farmers markets</a> citywide. Philly Food Bucks is a healthy food incentive program launched in 2010 to increase the purchasing power of SNAP customers. For every $5 that SNAP customers spend using their benefits at a participating market site, they receive a $2 Philly Food Bucks coupon for fresh fruits and vegetables.</p>
 
@@ -139,6 +139,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	    <p>Residents, businesses, and construction in Philadelphia all produced less waste in 2014 than they did in 2007, despite an increase in population and construction. Continuing to reduce the amount we waste will make our city cleaner.</p>
 	  	<h4 class="h6">Source</h4>
 	  	<p>City of Philadelphia Streets Department</p>
+			</div>
     </aside>
   </div>
 </div>
@@ -151,7 +152,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	<div class="medium-16 column prxl">
 		{% include charts/engaged-philadelphians-spring-cleanup.html %}
 	</div>
-  <div class="medium-8 column end">
+  <div class="medium-8 column right">
     <aside class="related pll-mu">
 	  	<h3 class="h4 pbl">All Philadelphians benefit from sustainability education, employment, and business opportunities.</h3>
 	  	<!-- <h4 class="h6">Note</h4> -->
