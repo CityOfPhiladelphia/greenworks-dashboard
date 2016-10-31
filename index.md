@@ -3,28 +3,29 @@ layout: default
 title: Greenworks Dashboard
 ---
 <script>
-// This can be moved to its own file and included with scripts.html
+// TODO This can be moved to its own file and included with scripts.html
 
-// Chart Globals
-
+// Chart Globals ===============================================================
 Chart.defaults.global.defaultFontFamily = "'Open Sans', 'Helvetica', sans-serif";
-
-Chart.defaults.global.title.fontFamily = "'Montserrat', 'Helvetica', sans-serif"
-
+Chart.defaults.global.title.fontFamily = "'Montserrat', 'Helvetica', sans-serif";
+Chart.defaults.global.title.fontColor = 'rgb(68, 68, 68)';
 Chart.defaults.global.legend.position = 'bottom';
 
-// Format numbers with commas in charts
-
+// Format numbers with commas in charts ========================================
 Chart.scaleService.updateScaleDefaults('linear', {
 	ticks: {
 		callback: function (value) {
+			if (value >= 1000000)
+				return value / 1000000 + 'm';
+			else if (value <= 999999 && value > 9999)
+				return value / 1000 + 'k';
+			else
 			return (+value).toLocaleString();
 		}
 	}
 })
 
-// Format numbers with commas in tooltips
-
+// Format numbers with commas in tooltips ======================================
 Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || '';
 	return datasetLabel + ': ' + (+tooltipItem.yLabel).toLocaleString();
@@ -168,9 +169,6 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   <div class="medium-16 column prxl">
     {% include charts/8-engaged-philadelphians.html %}
   </div>
-	<!-- <div class="medium-16 column prxl">
-		{% include charts/engaged-philadelphians-spring-cleanup.html %}
-	</div> -->
   <div class="medium-8 column">
     <aside class="related pll-mu">
 	  	<h3 class="h4 pbl">All Philadelphians benefit from sustainability education, employment, and business opportunities.</h3>
