@@ -26,21 +26,21 @@
 					{
 		    	  label: 'TreePhilly',
 				    data: pluck(rows, 'TreePhilly'),
-				    backgroundColor: 'rgba(255, 106, 86, 0.8)',
-				    borderColor: 'rgba(255, 106, 86, 1)',
+				    backgroundColor: 'rgba(255, 106, 86, 0.7)',
+				    borderColor: 'rgba(255, 87, 70, 1)',
 						borderWidth: 0
 					},
 					{
 						label: 'Greenworks Update',
 						data: pluck(rows, 'Greenworks Update'),
-						backgroundColor: 'rgba(239, 36, 119, 0.6)',
+						backgroundColor: 'rgba(239, 36, 119, 0.7)',
 						borderColor: 'rgba(239, 36, 119, 1)',
 						borderWidth: 0
 					},
 					{
 						label: 'Philly Spring Clean-Up',
 						data: pluck(rows, 'Philly Spring Clean-Up'),
-						backgroundColor: 'rgba(168, 191, 18, 0.8)',
+						backgroundColor: 'rgba(168, 191, 18, 0.7)',
 						borderColor: 'rgba(168, 191, 18, 1)',
 						borderWidth: 0
 					}
@@ -52,18 +52,31 @@
 					text: 'Philadelphians Engaged in Sustainability',
 					position: 'top'
 				},
+				spanGaps: true,
 				scales: {
 					yAxes: [{
-							// stacked: true,
-							type: 'logarithmic',
-                position: 'left'
-                // ticks: {
-                //     min: 1,
-                //     max: 30000
-                // }
+						stacked: true,
+						type: 'logarithmic',
+            position: 'left',
+            ticks: {
+              min: 100,
+              max: 30000,
+							callback: function(value, index, values) {//needed to change the scientific notation results from using logarithmic scale
+								return Number(value.toString());//pass tick values as a string into Number function
+							}
+            },
+						afterBuildTicks: function(pckBarChart) {
+							pckBarChart.ticks = [];
+							pckBarChart.ticks.push(0);
+							pckBarChart.ticks.push(100);
+							pckBarChart.ticks.push(200);
+							// pckBarChart.ticks.push(400);
+							pckBarChart.ticks.push(20000);
+							pckBarChart.ticks.push(30000);
+						}
 					}],
 					xAxes: [{
-							stacked: true
+							// stacked: true
 					}]
 				}
     	}

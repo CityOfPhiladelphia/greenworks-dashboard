@@ -7,6 +7,10 @@ title: Greenworks Dashboard
 
 // Chart Globals
 
+Chart.defaults.global.defaultFontFamily = "'Open Sans', 'Helvetica', sans-serif";
+
+Chart.defaults.global.title.fontFamily = "'Montserrat', 'Helvetica', sans-serif"
+
 Chart.defaults.global.legend.position = 'bottom';
 
 // Format numbers with commas in charts
