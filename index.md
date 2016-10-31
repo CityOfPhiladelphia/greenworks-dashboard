@@ -51,6 +51,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
+<!-- End of each chart section with BACK TO TOP link -->
+<div class="medium-24 column top">
+	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
+</div>
+
 <h2 id="vision-2">Vision 2: Healthy Outdoor and Indoor Air
 	<a href="#vision-2" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
@@ -68,6 +73,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	  	<p>U.S. Environmental Protection Agency</p>
     </aside>
   </div>
+</div>
+
+<!-- End of each chart section with BACK TO TOP link -->
+<div class="medium-24 column top">
+	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
 </div>
 
 <h2 id="vision-3">Vision 3: Clean and Efficient Energy
@@ -88,6 +98,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	  	<p>City of Philadelphia Energy Office</p>
     </aside>
   </div>
+</div>
+
+<!-- End of each chart section with BACK TO TOP link -->
+<div class="medium-24 column top">
+	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
 </div>
 
 <h2 id="vision-4">Vision 4: Climate Prepared and Carbon Neutral Communities
@@ -126,6 +141,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
+<!-- End of each chart section with BACK TO TOP link -->
+<div class="medium-24 column top">
+	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
+</div>
+
 <h2 id="vision-6">Vision 6: Accessible, Affordable, and Safe Transportation
 	<a href="#vision-6" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
@@ -142,6 +162,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	  	<p>American Community Survey</p>
     </aside>
   </div>
+</div>
+
+<!-- End of each chart section with BACK TO TOP link -->
+<div class="medium-24 column top">
+	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
 </div>
 
 <h2 id="vision=7">Vision 7: Zero Waste
@@ -162,6 +187,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
+<!-- End of each chart section with BACK TO TOP link -->
+<div class="medium-24 column top">
+	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
+</div>
+
 <h2 id="vision-8">Vision 8: Engaged Students, Stewards, and Workers
 	<a href="#vision-8" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
@@ -178,4 +208,9 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	  	<p>City of Philadelphia Office of Sustainability and Partners</p>
     </aside>
   </div>
+</div>
+
+<!-- End of each chart section with BACK TO TOP link -->
+<div class="medium-24 column top">
+	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
 </div>
