@@ -27,7 +27,9 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 }
 </script>
 
-<h2 class="ptl">Vision 1: Accessible Food and Drinking Water</h2>
+<h2 class="ptl" id="vision-1">Vision 1: Accessible Food and Drinking Water
+	  <a href="#vision-1" class="header-link"><i class="fa fa-link"></i></a>
+</h2>
 <div class="row pbxl ptl">
   <div class="medium-16 column prxl">
     {% include charts/1-snap-participation.html %}
@@ -44,7 +46,9 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
-<h2>Vision 2: Healthy Outdoor and Indoor Air</h2>
+<h2 id="vision-2">Vision 2: Healthy Outdoor and Indoor Air
+	<a href="#vision-2" class="header-link"><i class="fa fa-link"></i></a>
+</h2>
 <div class="row pbxl ptl">
   <div class="medium-16 column prxl">
     {% include charts/2-outdoor-air-quality.html %}
@@ -61,7 +65,9 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
-<h2>Vision 3: Clean and Efficient Energy</h2>
+<h2 id="vision-3">Vision 3: Clean and Efficient Energy
+	<a href="#vision-3" class="header-link"><i class="fa fa-link"></i></a>
+</h2>
 <div class="row pbxl ptl">
   <div class="medium-16 column prxl">
     {% include charts/3-citywide-energy-usage.html %}
@@ -79,7 +85,9 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
-<h2>Vision 4: Climate Prepared and Carbon Neutral Communities</h2>
+<h2 id="vision-4">Vision 4: Climate Prepared and Carbon Neutral Communities
+	<a href="#vision-4" class="header-link"><i class="fa fa-link"></i></a>
+</h2>
 <div class="row pbxl ptl">
   <div class="medium-16 column prxl">
     {% include charts/4-philadelphia-carbon-footprint.html %}
@@ -95,7 +103,9 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
-<h2>Vision 5: Quality Natural Resources</h2>
+<h2 id="vision-5">Vision 5: Quality Natural Resources
+	<a href="#vision-5" class="header-link"><i class="fa fa-link"></i></a>
+</h2>
 <div class="row pbxl ptl">
   <div class="medium-16 column prxl">
     {% include charts/5-planted-trees.html %}
@@ -111,7 +121,9 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
-<h2>Vision 6: Accessible, Affordable, and Safe Transportation</h2>
+<h2 id="vision-6">Vision 6: Accessible, Affordable, and Safe Transportation
+	<a href="#vision-6" class="header-link"><i class="fa fa-link"></i></a>
+</h2>
 <div class="row pbxl ptl">
   <div class="medium-16 column prxl">
     {% include charts/6-low-carbon-commute.html %}
@@ -127,7 +139,9 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
-<h2>Vision 7: Zero Waste</h2>
+<h2 id="vision=7">Vision 7: Zero Waste
+	<a href="#vision-7" class="header-link"><i class="fa fa-link"></i></a>
+</h2>
 <div class="row pbxl ptl">
   <div class="medium-16 column prxl">
     {% include charts/7-waste-diversion-rate.html %}
@@ -143,14 +157,16 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
-<h2>Vision 8: Engaged Students, Stewards, and Workers</h2>
+<h2 id="vision-8">Vision 8: Engaged Students, Stewards, and Workers
+	<a href="#vision-8" class="header-link"><i class="fa fa-link"></i></a>
+</h2>
 <div class="row pbxl ptl">
   <div class="medium-16 column prxl">
     {% include charts/8-engaged-philadelphians.html %}
   </div>
-	<!-- <div class="medium-16 column prxl">
+	<div class="medium-16 column prxl">
 		{% include charts/engaged-philadelphians-spring-cleanup.html %}
-	</div> -->
+	</div>
   <div class="medium-8 column">
     <aside class="related pll-mu">
 	  	<h3 class="h4 pbl">All Philadelphians benefit from sustainability education, employment, and business opportunities.</h3>

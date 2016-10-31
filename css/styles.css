@@ -5,3 +5,19 @@ h6 {
 	font-size: .8rem;
 	margin-bottom: 0px;
 }
+
+/* ANCHOR LINKS
+http://ben.balter.com/2014/03/13/pages-anchor-links/ */
+.header-link {
+  opacity: 0;
+  font-size: 80%;
+}
+
+h1:hover .header-link,
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
+}
