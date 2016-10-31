@@ -26,8 +26,8 @@
           {
             label: 'Recycling',
             data: pluck(rows, 'Recycling'),
-						backgroundColor: 'rgba(168, 191, 18, 0.6)',
-						borderColor: 'rgba(145, 158, 9, 1)',
+						backgroundColor: 'rgba(168, 191, 18, 0.7)',
+            borderColor: 'rgba(168, 191, 18, 1)',
 						borderWidth: 3
           }
         ]
@@ -35,7 +35,11 @@
 			options: {
       	scales: {
           yAxes: [{
-            stacked: true
+            stacked: true,
+						scaleLabel: {
+							labelString: 'Label',
+							display: true
+						}
           }]
 				},
 				title: {

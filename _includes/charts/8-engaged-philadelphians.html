@@ -33,7 +33,7 @@
 					{
 						label: 'Greenworks Update',
 						data: pluck(rows, 'Greenworks Update'),
-						backgroundColor: 'rgba(239, 36, 119, 0.7)',
+						backgroundColor: 'rgba(239, 36, 119, 0.8)',
 						borderColor: 'rgba(239, 36, 119, 1)',
 						borderWidth: 0
 					},
@@ -53,8 +53,13 @@
 					position: 'top'
 				},
 				spanGaps: true,
+
 				scales: {
 					yAxes: [{
+						scaleLabel: {
+							display: true,
+							labelString: 'Philadelphians'
+						},
 						stacked: true,
 						type: 'logarithmic',
             position: 'left',
@@ -62,7 +67,7 @@
               min: 100,
               max: 30000,
 							callback: function(value, index, values) {//needed to change the scientific notation results from using logarithmic scale
-								return Number(value.toString());//pass tick values as a string into Number function
+								return Number(+value).toLocaleString();//pass tick values as a string into Number function
 							}
             },
 						afterBuildTicks: function(pckBarChart) {
@@ -70,8 +75,6 @@
 							pckBarChart.ticks.push(0);
 							pckBarChart.ticks.push(100);
 							pckBarChart.ticks.push(200);
-							// pckBarChart.ticks.push(400);
-							pckBarChart.ticks.push(20000);
 							pckBarChart.ticks.push(30000);
 						}
 					}],
