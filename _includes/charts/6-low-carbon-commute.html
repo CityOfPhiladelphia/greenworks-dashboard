@@ -2,7 +2,7 @@
   <script>
   (function () {
     // Pass data from Jekyll/liquid to JavaScript
-    var rows = {{ site.data.low_carbon_commute | jsonify }}
+    var rows = {{ site.data._low_carbon_commute | jsonify }}
 
 		/* This combined chart type will need a 2nd custom scale due to difference in data domains
 		   See http://www.chartjs.org/docs/#advanced-usage-writing-new-scale-types  */
@@ -14,20 +14,20 @@
         datasets: [
           {
             label: 'Drove alone',
-            data: pluck(rows, 'Car, truck, or van -- drove alone'),
+            data: pluck(rows, 'Drove alone'),
             backgroundColor: 'rgba(239, 36, 119, 0.7)',
             borderColor: 'rgba(239, 36, 119, 1)',
       //      borderWidth: 1
           },
           {
             label: 'Carpooled',
-            data: pluck(rows, 'Car, truck, or van -- drove alone'),
+            data: pluck(rows, 'Carpooled'),
             backgroundColor: 'rgba(0, 170, 181, 0.7)',
             borderColor: 'rgba(0, 170, 181, 1)'
           },
           {
-            label: 'Public Transit',
-            data: pluck(rows, 'Public transportation (excluding taxicab)'),
+            label: 'Public Transit (excluding taxicab)',
+            data: pluck(rows, 'Public Transit'),
             backgroundColor: 'rgba(249, 147, 0, 0.8)',
             borderColor: 'rgba(249, 147, 0, 1)'
           },
@@ -39,7 +39,7 @@
 					},
 					{
 						label: 'Other',
-						data: pluck(rows, 'Other means'),
+						data: pluck(rows, 'Other'),
 						backgroundColor: 'rgba(168, 191, 18, 0.7)',
 						borderColor: 'rgba(168, 191, 18, 1)'
 					},
