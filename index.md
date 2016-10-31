@@ -148,9 +148,9 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   <div class="medium-16 column prxl">
     {% include charts/8-engaged-philadelphians.html %}
   </div>
-	<div class="medium-16 column prxl">
+	<!-- <div class="medium-16 column prxl">
 		{% include charts/engaged-philadelphians-spring-cleanup.html %}
-	</div>
+	</div> -->
   <div class="medium-8 column">
     <aside class="related pll-mu">
 	  	<h3 class="h4 pbl">All Philadelphians benefit from sustainability education, employment, and business opportunities.</h3>
