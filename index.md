@@ -139,7 +139,6 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	    <p>Residents, businesses, and construction in Philadelphia all produced less waste in 2014 than they did in 2007, despite an increase in population and construction. Continuing to reduce the amount we waste will make our city cleaner.</p>
 	  	<h4 class="h6">Source</h4>
 	  	<p>City of Philadelphia Streets Department</p>
-			</div>
     </aside>
   </div>
 </div>
