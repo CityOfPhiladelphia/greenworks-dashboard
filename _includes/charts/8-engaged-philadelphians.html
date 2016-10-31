@@ -5,43 +5,44 @@
     var rows = {{ site.data.engaged_philadelphians | jsonify }}
 
     var opts = {
-      type: 'bar',
+      type: 'line',
       data: {
         labels: pluck(rows, 'Year'),
         datasets: [
-          {
-						label: 'Greenworks Update',
-            data: pluck(rows, 'Greenworks Update'),
-            backgroundColor: 'rgba(239, 36, 119, 0.6)',
-            borderColor: 'rgba(239, 36, 119, 1)',
-            borderWidth: 3
-          },
           {
             label: 'Powercorps',
             data: pluck(rows, 'Powercorps'),
             backgroundColor: 'rgba(150, 201, 255, 0.8)',
             borderColor: 'rgba(150, 201, 255, 1)',
-						borderWidth: 3
+						borderWidth: 0
           },
           {
             label: 'Waste Watchers',
             data: pluck(rows, 'Waste Watchers'),
             backgroundColor: 'rgba(242, 226, 5, 0.6)',
             borderColor: 'rgba(242, 226, 5, 1)',
-						borderWidth: 3
+						borderWidth: 0
 				  },
 					{
-		    	  label: 'ECA Trainees',
-				    data: pluck(rows, 'ECA Trainees'),
+		    	  label: 'TreePhilly',
+				    data: pluck(rows, 'TreePhilly'),
 				    backgroundColor: 'rgba(255, 106, 86, 0.8)',
 				    borderColor: 'rgba(255, 106, 86, 1)',
-						borderWidth: 3
+						borderWidth: 0
+					},
+					{
+						label: 'Greenworks Update',
+						data: pluck(rows, 'Greenworks Update'),
+						backgroundColor: 'rgba(239, 36, 119, 0.6)',
+						borderColor: 'rgba(239, 36, 119, 1)',
+						borderWidth: 0
 					},
 					{
 						label: 'Philly Spring Clean-Up',
 						data: pluck(rows, 'Philly Spring Clean-Up'),
 						backgroundColor: 'rgba(168, 191, 18, 0.8)',
 						borderColor: 'rgba(168, 191, 18, 1)',
+						borderWidth: 0
 					}
         ]
 			},
@@ -53,7 +54,13 @@
 				},
 				scales: {
 					yAxes: [{
-							stacked: true
+							// stacked: true,
+							type: 'logarithmic',
+                position: 'left'
+                // ticks: {
+                //     min: 1,
+                //     max: 30000
+                // }
 					}],
 					xAxes: [{
 							stacked: true
