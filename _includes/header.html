@@ -1,20 +1,39 @@
 <!-- Begin .header -->
-<header data-swiftype-index='false' class="site-header">
-  <div class="row site-branding">
-    <div class="small-24 medium-12 columns">
-      <a href="https://alpha.phila.gov" class="logo pam">
-        <img src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-white.png" alt="City of Philadelphia">
+<header data-swiftype-index='false' class="site-header app">
+	<div class="row">
+    <div class="small-24 columns">
+      <a href="http://beta.phila.gov/" class="logo">
+        <img data-interchange="[//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-mobile.png, small], [//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-white.png, medium]" src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-white.png" alt="City of Philadelphia">
       </a>
-      <h1 class="site-title">phila.gov</h1>
-      <h2 class="site-description">City of Philadelphia</h2>
+      <div class="page-title-container">
+        <a href="#/">
+          <h1 class="page-title">Greenworks Dashboard</h1>
+          <!-- <h2 class="page-subtitle">An optional subtitle</h2> -->
+        </a>
+      </div>
     </div>
-    {% if site.search %}
-    <div class="small-24 medium-12 columns">
-      <form class="search" data-global-search>
-        <input type="text" placeholder="Search alpha.phila.gov" class="search-field"><input type="submit">
-      </form>
-    </div>
-    {% endif %}
   </div>
   {% include breadcrumbs.html %}
 </header>
+
+
+<!-- Begin header -->
+<!-- <header data-swiftype-index='false' class="site-header app">
+  <div class="row">
+    <div class="small-24 columns">
+      <a href="http://alpha.phila.gov/" class="logo">
+        <img data-interchange="[//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-mobile.png, small], [//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-white.png, medium]" src="//cityofphiladelphia.github.io/patterns/images/city-of-philadelphia-white.png" alt="City of Philadelphia">
+      </a>
+      <div class="page-title-container">
+        <a href="#/">
+          <h1 class="page-title">Application Name With a Long Title</h1>
+          <h2 class="page-subtitle">An optional subtitle</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row expanded">
+    <div class="small-24 small-centered columns">
+      <div class="title-bar" data-responsive-toggle="site-nav" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle><span class="title-bar-title">Menu</span></button>
+</div> -->
