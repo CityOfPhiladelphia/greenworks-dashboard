@@ -146,6 +146,11 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
+<!-- End of each chart section with BACK TO TOP link -->
+<div class="medium-24 column top">
+	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
+</div>
+
 <h2 class="contrast" id="vision-5">Vision 5: Quality Natural Resources
 	<a href="#vision-5" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
