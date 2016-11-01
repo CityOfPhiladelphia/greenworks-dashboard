@@ -22,18 +22,18 @@
           },
           {
 						 type: 'bar',
-            label: 'Carpooled',
-            data: pluck(rows, 'Carpooled'),
-            backgroundColor: 'rgba(0, 170, 181, 0.7)',
-            borderColor: 'rgba(0, 170, 181, 1)'
-          },
-          {
-						 type: 'bar',
             label: 'Public Transit (excluding taxicab)',
             data: pluck(rows, 'Public Transit'),
-            backgroundColor: 'rgba(249, 147, 0, 0.8)',
-            borderColor: 'rgba(249, 147, 0, 1)'
+            backgroundColor: 'rgba(168, 191, 18, 0.8)',
+            borderColor: 'rgba(168, 191, 18, 1)'
           },
+					{
+						 type: 'bar',
+						label: 'Carpooled',
+						data: pluck(rows, 'Carpooled'),
+						backgroundColor: 'rgba(0, 170, 181, 0.7)',
+						borderColor: 'rgba(0, 170, 181, 1)'
+					},
 					{
 						type: 'bar',
 						label: 'Biked',
@@ -52,8 +52,8 @@
 						type: 'bar',
 						label: 'Worked at Home',
 						data: pluck(rows, 'Worked at Home'),
-						backgroundColor: 'rgba(54, 97, 162, 0.8)',
-						borderColor: 'rgba(54, 97, 162, 1)'
+						backgroundColor: 'rgba(249, 147, 0, 0.8)',
+						borderColor: 'rgba(249, 147, 0, 1)'
 					}
 					// {
 					// 	type: 'line',
