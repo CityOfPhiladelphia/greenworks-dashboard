@@ -23,7 +23,7 @@ h6:hover .header-link {
 }
 
 .top {
-  border-bottom: 1px dotted #a1a1a1;
+  /*border-bottom: 1px dotted #a1a1a1;*/
   padding-bottom: 10px;
   margin-bottom: 40px;
 }
