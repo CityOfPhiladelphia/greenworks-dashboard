@@ -32,6 +32,9 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 }
 </script>
 
+<h1 class="h4"> Placeholder </h1>
+<p>Click mode types in the chart to see commuting patterns in Philadelphia</p>
+
 <h2 class="ptl" id="vision-1">Vision 1: Accessible Food and Drinking Water
 	  <a href="#vision-1" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
@@ -43,7 +46,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
     <aside class="related pll-mu">
       <h3 class="h4 pbl">All Philadelphians have access to healthy, affordable, and sustainable food and drinking water.</h3>
 			<!-- <h4 class="h6">Note</h4> -->
-			<p>Philadelphians can use Supplemental Nutrition Assistance Program (SNAP) benefits to purchase healthy, locally-grown food at <a href="http://thefoodtrust.org/uploads/media_items/philly-food-bucks-brochure-english.original.pdf">many farmers markets</a> citywide. Philly Food Bucks is a healthy food incentive program launched in 2010 to increase the purchasing power of SNAP customers. For every $5 that SNAP customers spend using their benefits at a participating market site, they receive a $2 Philly Food Bucks coupon for fresh fruits and vegetables.</p>
+			<p>Philadelphians can use <a href="http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap">Supplemental Nutrition Assistance Program (SNAP)</a> benefits to purchase healthy, locally-grown food at <a href="http://thefoodtrust.org/uploads/media_items/philly-food-bucks-brochure-english.original.pdf">many farmers markets</a> citywide. Philly Food Bucks is a healthy food incentive program launched in 2010 to increase the purchasing power of SNAP customers. For every $5 that SNAP customers spend using their benefits at a participating market site, they receive a $2 Philly Food Bucks coupon for fresh fruits and vegetables.</p>
 
 	  	<h4 class="h6">Source</h4>
 	  	<p>Get Healthy Philly</p>
@@ -67,7 +70,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
     <aside class="related pll-mu">
       <h3 class="h4 pbl">All Philadelphians breathe healthy air inside and outside.</h3>
 			<!-- <h4 class="h6">Note</h4> -->
-	    <p>The Air Quality Index (AQI) is a daily measure of how clean or polluted our air is and how healthy it is to breathe. The Environmental Protection Agency revised the National Ambient Air Standards for ozone in 2015 and PM2.5 (particulate matter) in 2013 to hold cities and counties to higher standards for air quality. The City of Philadelphia will continue to work to meet and outperform outdoor air quality standards in the years ahead.</p>
+	    <p>The <a href="http://www.phila.gov/aqi/">Air Quality Index (AQI)</a> is a daily measure of how clean or polluted our air is and how healthy it is to breathe. The Environmental Protection Agency revised the National Ambient Air Standards for ozone in 2015 and PM2.5 (particulate matter) in 2013 to hold cities and counties to higher standards for air quality. The City of Philadelphia will continue to work to meet and outperform outdoor air quality standards in the years ahead.</p>
 
 			<h4 class="h6">Source</h4>
 	  	<p>U.S. Environmental Protection Agency</p>
@@ -157,7 +160,8 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
     <aside class="related pll-mu">
 	  	<h3 class="h4 pbl">All Philadelphians have access to safe, affordable, and low-carbon transportation.</h3>
 	  	<!-- <h4 class="h6">Note</h4> -->
-      <p>Recent investments in pedestrian infrastructure, state funding for SEPTA improvements, and the successful launch of the Indego bike share system are improving low-carbon options to get around Philadelphia.</p>
+      <p>Low-carbon commuting in Philadelphia has increased by more than 7,000 people in the past five years.</p>
+			<p>Recent investments in pedestrian infrastructure, state funding for SEPTA improvements, and the successful launch of the Indego bike share system are improving low-carbon options to get around Philadelphia.</p>
 	  	<h4 class="h6">Source</h4>
 	  	<p>American Community Survey</p>
     </aside>

@@ -10,7 +10,7 @@
         labels: pluck(rows, 'Year'),
         datasets: [
           {
-            label: 'Powercorps',
+            label: 'PowerCorpsPHL',
             data: pluck(rows, 'Powercorps'),
             backgroundColor: 'rgba(150, 201, 255, 0.8)',
             borderColor: 'rgba(150, 201, 255, 1)',
@@ -64,7 +64,8 @@
 						type: 'logarithmic',
             position: 'left',
             ticks: {
-              min: 100,
+							beginAtZero: true,
+              min: 60,
               max: 30000,
 							callback: function(value, index, values) {//needed to change the scientific notation results from using logarithmic scale
 								return Number(+value).toLocaleString();//pass tick values as a string into Number function
@@ -75,6 +76,7 @@
 							pckBarChart.ticks.push(0);
 							pckBarChart.ticks.push(100);
 							pckBarChart.ticks.push(200);
+							pckBarChart.ticks.push(10000);
 							pckBarChart.ticks.push(30000);
 						}
 					}],

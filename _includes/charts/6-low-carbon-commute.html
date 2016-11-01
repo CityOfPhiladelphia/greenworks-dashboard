@@ -13,7 +13,7 @@
         labels: pluck(rows, 'Year'),
         datasets: [
           {
-						type: 'bar',
+						 type: 'bar',
             label: 'Drove alone',
             data: pluck(rows, 'Drove alone'),
             backgroundColor: 'rgba(239, 36, 119, 0.7)',
@@ -21,14 +21,14 @@
       //      borderWidth: 1
           },
           {
-						type: 'bar',
+						 type: 'bar',
             label: 'Carpooled',
             data: pluck(rows, 'Carpooled'),
             backgroundColor: 'rgba(0, 170, 181, 0.7)',
             borderColor: 'rgba(0, 170, 181, 1)'
           },
           {
-						type: 'bar',
+						 type: 'bar',
             label: 'Public Transit (excluding taxicab)',
             data: pluck(rows, 'Public Transit'),
             backgroundColor: 'rgba(249, 147, 0, 0.8)',
@@ -54,14 +54,21 @@
 						data: pluck(rows, 'Worked at Home'),
 						backgroundColor: 'rgba(54, 97, 162, 0.8)',
 						borderColor: 'rgba(54, 97, 162, 1)'
-					},
-					{
-						type: 'line',
-						label: 'Low Carbon Commute',
-						data: pluck(rows, 'Low Carbon Commute'),
-						backgroundColor: 'rgba(168, 191, 18, 0.7)',
-						borderColor: 'rgba(168, 191, 18, 1)'
 					}
+					// {
+					// 	type: 'line',
+					// 	label: 'Low Carbon Commute Percentage',
+					// 	data: pluck(rows, 'Low Carbon Commute Percentage'),
+					// 	backgroundColor: 'rgba(168, 191, 18, 0.7)',
+					// 	borderColor: 'rgba(168, 191, 18, 1)'
+					// }
+					// {
+					// 	type: 'bar',
+					// 	label: 'Total',
+					// 	data: pluck(rows, 'Total'),
+					// 	backgroundColor: 'rgba(231, 73, 75, 0.7)',
+					// 	borderColor: 'rgba(231, 73, 75, 1)'
+					// }
         ]
       },
 			options: {
@@ -79,7 +86,7 @@
         },
 				title: {
 					display: true,
-					text: 'Low-Carbon Commute',
+					text: 'Commuting in Philadelphia',
 					position: 'top'
 				}
     	}

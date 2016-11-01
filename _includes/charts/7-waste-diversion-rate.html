@@ -9,13 +9,7 @@
       data: {
         labels: pluck(rows, 'Year'),
         datasets: [
-					{
-						label: 'Waste to Energy',
-						data: pluck(rows, 'Waste to Energy'),
-						backgroundColor: 'rgba(127, 197, 220, 0.8)',
-						borderColor: 'rgba(54, 162, 235, 1)',
-						borderWidth: 3
-					},
+
 					{
 						label: 'Landfill',
 						data: pluck(rows, 'Landfill'),
@@ -26,10 +20,17 @@
           {
             label: 'Recycling',
             data: pluck(rows, 'Recycling'),
-						backgroundColor: 'rgba(168, 191, 18, 0.7)',
+						backgroundColor: 'rgba(168, 191, 18, 0.5)',
             borderColor: 'rgba(168, 191, 18, 1)',
 						borderWidth: 3
-          }
+          },
+					{
+						label: 'Waste to Energy',
+						data: pluck(rows, 'Waste to Energy'),
+						backgroundColor: 'rgba(127, 197, 220, 0.6)',
+						borderColor: 'rgba(54, 162, 235, 1)',
+						borderWidth: 3
+					}
         ]
 			},
 			options: {
