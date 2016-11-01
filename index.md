@@ -2,6 +2,7 @@
 layout: default
 title: Greenworks Dashboard
 ---
+
 <script>
 // TODO This can be moved to its own file and included with scripts.html
 
@@ -10,6 +11,7 @@ Chart.defaults.global.defaultFontFamily = "'Open Sans', 'Helvetica', sans-serif"
 Chart.defaults.global.title.fontFamily = "'Montserrat', 'Helvetica', sans-serif";
 Chart.defaults.global.title.fontColor = 'rgb(68, 68, 68)';
 Chart.defaults.global.legend.position = 'bottom';
+Chart.defaults.global.legend.padding = 15;
 
 // Format numbers with commas in charts ========================================
 Chart.scaleService.updateScaleDefaults('linear', {
@@ -32,10 +34,28 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 }
 </script>
 
-<h1 class="h4"> Placeholder </h1>
-<p>Click mode types in the chart to see commuting patterns in Philadelphia</p>
+<div class= "row">
+  <div class="medium-16 column">
 
-<h2 class="ptl" id="vision-1">Vision 1: Accessible Food and Drinking Water
+    {% capture about_content %}{% include about.md %}{% endcapture %}
+
+    {{ about_content | markdownify }}
+
+	</div>
+	<div class="medium-8 column">
+	  <aside id="secondary" class="related pll-mu">
+	    <!-- <h2>About the Application</h2> -->
+
+	    <p class="">This is an open source project that uses the City of Philadelphia <a href="https://github.com/CityOfPhiladelphia/patterns">patterns</a>, <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://leafletjs.com/">Leaflet.js</a>, and <a href="http://www.chartjs.org/">Chart.js</a>. </p>
+	    <a href="http://beta.phila.gov/feedback" class="button icon">Leave Feedback<i class="fa fa-comment"></i></a>
+	    <br>
+	    <a href="https://github.com/CityOfPhiladelphia/greenworks-dashboard" class="button icon">Source Code<i class="fa fa-code"></i></a>
+	    <br>
+	    <a href="https://www.opendataphilly.org/dataset/greenworks-dashboard" class="button icon">Download Data<i class="fa fa-table"></i></a>
+	  </aside>
+	</div>
+</div>
+<h2 class="ptl contrast" id="vision-1">Vision 1: Accessible Food and Drinking Water
 	  <a href="#vision-1" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
 <div class="row pbxl ptl">
@@ -59,7 +79,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
 </div>
 
-<h2 id="vision-2">Vision 2: Healthy Outdoor and Indoor Air
+<h2 class="contrast" id="vision-2">Vision 2: Healthy Outdoor and Indoor Air
 	<a href="#vision-2" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
 <div class="row pbxl ptl">
@@ -83,7 +103,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
 </div>
 
-<h2 id="vision-3">Vision 3: Clean and Efficient Energy
+<h2 class="contrast" id="vision-3">Vision 3: Clean and Efficient Energy
 	<a href="#vision-3" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
 <div class="row pbxl ptl">
@@ -108,7 +128,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
 </div>
 
-<h2 id="vision-4">Vision 4: Climate Prepared and Carbon Neutral Communities
+<h2 class="contrast" id="vision-4">Vision 4: Climate Prepared and Carbon Neutral Communities
 	<a href="#vision-4" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
 <div class="row pbxl ptl">
@@ -126,7 +146,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
   </div>
 </div>
 
-<h2 id="vision-5">Vision 5: Quality Natural Resources
+<h2 class="contrast" id="vision-5">Vision 5: Quality Natural Resources
 	<a href="#vision-5" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
 <div class="row pbxl ptl">
@@ -149,7 +169,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
 </div>
 
-<h2 id="vision-6">Vision 6: Accessible, Affordable, and Safe Transportation
+<h2 class="contrast" id="vision-6">Vision 6: Accessible, Affordable, and Safe Transportation
 	<a href="#vision-6" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
 <div class="row pbxl ptl">
@@ -173,7 +193,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
 </div>
 
-<h2 id="vision=7">Vision 7: Zero Waste
+<h2 class="contrast" id="vision=7">Vision 7: Zero Waste
 	<a href="#vision-7" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
 <div class="row pbxl ptl">
@@ -196,7 +216,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	<a class="float-right" href="#top"><i class="fa fa-arrow-up"></i> <span class="to-top">back to top</span></a>
 </div>
 
-<h2 id="vision-8">Vision 8: Engaged Students, Stewards, and Workers
+<h2 class="contrast" id="vision-8">Vision 8: Engaged Students, Stewards, and Workers
 	<a href="#vision-8" class="header-link"><i class="fa fa-link"></i></a>
 </h2>
 <div class="row pbxl ptl">
