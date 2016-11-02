@@ -46,7 +46,7 @@ Chart.defaults.global.tooltips.callbacks.label = function (tooltipItem, data) {
 	  <aside id="secondary" class="related pll-mu">
 	    <!-- <h2>About the Application</h2> -->
 
-	    <p class="">This is an open source project that uses the City of Philadelphia <a href="https://github.com/CityOfPhiladelphia/patterns">patterns</a>, <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://leafletjs.com/">Leaflet.js</a>, and <a href="http://www.chartjs.org/">Chart.js</a>. </p>
+	    <p>This is an open source project that uses the City of Philadelphia <a href="https://github.com/CityOfPhiladelphia/patterns">patterns</a>, <a href="http://jekyllrb.com/">Jekyll</a>, and <a href="http://www.chartjs.org/">Chart.js</a>. </p>
 	    <a href="http://beta.phila.gov/feedback" class="button icon">Leave Feedback<i class="fa fa-comment"></i></a>
 	    <br>
 	    <a href="https://github.com/CityOfPhiladelphia/greenworks-dashboard" class="button icon">Source Code<i class="fa fa-code"></i></a>
