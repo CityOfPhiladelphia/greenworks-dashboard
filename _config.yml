@@ -8,4 +8,4 @@ search: False
 # in this case, we'll hide everything except '/_data'
 prose:
   rooturl: "_data"
-  ignore: ['/css', '/_includes', '/_layouts', '/scripts', '*.yml']
+#  ignore: ['/css', '/_includes', '/_layouts', '/scripts', '*.yml']
