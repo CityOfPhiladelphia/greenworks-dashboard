@@ -6,6 +6,6 @@ search: False
 # Prose configuration
 # set ignore parameter to hide files we don't want available to edit
 # in this case, we'll hide everything except '/_data'
-#prose:
-#  rooturl: "_"
-#  ignore: ['/css', '/_includes', '/_layouts', '/scripts', '*.yml']
+prose:
+  rooturl: "_"
+  ignore: ['/css', '/_includes', '/_layouts', '/scripts', '*.yml']
