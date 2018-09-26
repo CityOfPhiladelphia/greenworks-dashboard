@@ -9,30 +9,30 @@
       data: {
         labels: pluck(rows, 'Year'),
         datasets: [
-					{
-						label: 'Days rated "Good"',
-						data: pluck(rows, 'Good'),
-						backgroundColor: 'rgba(150, 201, 255, 0.6)',
-						borderColor: 'rgba(150, 201, 255, 1)',
-						borderWidth: 3
-					}
+          {
+            label: 'Days rated "Good"',
+            data: pluck(rows, 'Good'),
+            backgroundColor: 'rgba(150, 201, 255, 0.6)',
+            borderColor: 'rgba(150, 201, 255, 1)',
+            borderWidth: 3
+          }
         ]
-			},
-			options: {
-				title: {
+      },
+      options: {
+        title: {
           display: true,
-					position: 'top',
+          position: 'top',
           text: 'Outdoor Air Quality'
-      	},
-				scales: {
-					yAxes: [{
-						scaleLabel: {
-							display: true,
-							labelString: 'Days of the Year'
-						}
-					}]
-				}
-			}
+        },
+        scales: {
+          yAxes: [{
+            scaleLabel: {
+              display: true,
+              labelString: 'Days of the Year'
+            }
+          }]
+        }
+      }
     }
 
     new Chart(getScriptParent(), opts)

@@ -12,38 +12,38 @@
           {
             label: 'Street Trees Planted',
             data: pluck(rows, 'Street Trees Planted'),
-						backgroundColor: 'rgba(150, 201, 255, 0.8)',
+            backgroundColor: 'rgba(150, 201, 255, 0.8)',
             borderColor: 'rgba(150, 201, 255, 1)',
             borderWidth: 0
           },
           {
             label: 'Yard Trees Planted',
             data: pluck(rows, 'Yard Trees Planted'),
-						backgroundColor: 'rgba(168, 191, 18, 0.7)',
+            backgroundColor: 'rgba(168, 191, 18, 0.7)',
             borderColor: 'rgba(168, 191, 18, 1)',
-						borderWidth: 0
+            borderWidth: 0
           }
         ]
       },
-			options: {
-				title: {
-						display: true,
-						text: 'Planted Trees',
-						position: 'top'
-				},
-				scales: {
-					yAxes: [{
-						stacked: true,
-						scaleLabel: {
-							display: true,
-							labelString: 'Trees Planted'
-						}
-					}],
-					xAxes: [{
-						stacked: true
-					}]
-				}
-			}
+      options: {
+        title: {
+          display: true,
+          text: 'Planted Trees',
+          position: 'top'
+        },
+        scales: {
+          yAxes: [{
+            stacked: true,
+            scaleLabel: {
+              display: true,
+              labelString: 'Trees Planted'
+            }
+          }],
+          xAxes: [{
+            stacked: true
+          }]
+        }
+      }
     }
 
     new Chart(getScriptParent(), opts)

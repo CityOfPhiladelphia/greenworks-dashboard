@@ -10,59 +10,59 @@
         labels: pluck(rows, 'Year'),
         datasets: [
           {
-						// type: 'bar',
-						label: 'Buildings',
+            // type: 'bar',
+            label: 'Buildings',
             data: pluck(rows, 'Buildings'),
-						backgroundColor: 'rgba(249, 147, 0, 0.7)',
-						borderColor: 'rgba(249, 147, 0, 1)',
-						borderWidth: 0
+            backgroundColor: 'rgba(249, 147, 0, 0.7)',
+            borderColor: 'rgba(249, 147, 0, 1)',
+            borderWidth: 0
           },
           {
-						// type: 'bar',
+            // type: 'bar',
             label: 'Transportation',
             data: pluck(rows, 'Transportation'),
-						backgroundColor: 'rgba(54, 162, 235, 0.7)',
-						borderColor: 'rgba(54, 162, 235, 1)',
-						borderWidth: 0
-					},
-					{
-					  // type: 'bar',
-						label: 'Other (Waste and Industrial Emissions)',
-						data: pluck(rows, 'Other'),
-						backgroundColor: 'rgba(168, 191, 18, 0.7)',
+            backgroundColor: 'rgba(54, 162, 235, 0.7)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 0
+          },
+          {
+            // type: 'bar',
+            label: 'Other (Waste and Industrial Emissions)',
+            data: pluck(rows, 'Other'),
+            backgroundColor: 'rgba(168, 191, 18, 0.7)',
             borderColor: 'rgba(168, 191, 18, 1)',
-						borderWidth: 0
-					}
-					// {
-					// 	type: 'bar',
-					// 	label: 'Goal',
+            borderWidth: 0
+          }
+          // {
+          // 	type: 'bar',
+          // 	label: 'Goal',
           //   data: pluck(rows, 'Total'),
-					// 	backgroundColor: 'rgba(0, 170, 181, 1)',
+          // 	backgroundColor: 'rgba(0, 170, 181, 1)',
           //   borderColor: 'rgba(0, 170, 181, 1)'
-					//   }
-    		]
-			},
-	  	options: {
-				title: {
-					display: true,
-					text: 'Philadelphia Carbon Footprint',
-					position: 'top'
-				},
-				scales: {
+          //   }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Philadelphia Carbon Footprint',
+          position: 'top'
+        },
+        scales: {
           xAxes: [{
-              stacked: true
+            stacked: true
           }],
           yAxes: [{
             stacked: true,
-						scaleLabel: {
-							display: true,
-							labelString: 'Metric Tons of CO2e Emitted'
-						}
+            scaleLabel: {
+              display: true,
+              labelString: 'Metric Tons of CO2e Emitted'
+            }
           }]
         },
-				legend: {
-					position: 'bottom'
-				}
+        legend: {
+          position: 'bottom'
+        }
       }
     }
 

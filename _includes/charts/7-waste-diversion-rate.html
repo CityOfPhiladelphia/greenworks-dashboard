@@ -10,48 +10,48 @@
         labels: pluck(rows, 'Year'),
         datasets: [
 
-					{
-						label: 'Landfill',
-						data: pluck(rows, 'Landfill'),
-						backgroundColor: 'rgba(249, 147, 0, 0.7)',
-						borderColor: 'rgba(249, 147, 0, 1)',
-						borderWidth: 3
-					},
+          {
+            label: 'Landfill',
+            data: pluck(rows, 'Landfill'),
+            backgroundColor: 'rgba(249, 147, 0, 0.7)',
+            borderColor: 'rgba(249, 147, 0, 1)',
+            borderWidth: 3
+          },
           {
             label: 'Recycling',
             data: pluck(rows, 'Recycling'),
-						backgroundColor: 'rgba(168, 191, 18, 0.5)',
+            backgroundColor: 'rgba(168, 191, 18, 0.5)',
             borderColor: 'rgba(168, 191, 18, 1)',
-						borderWidth: 3
+            borderWidth: 3
           },
-					{
-						label: 'Waste to Energy',
-						data: pluck(rows, 'Waste to Energy'),
-						backgroundColor: 'rgba(150, 201, 255, 0.5)',
-						borderColor: 'rgba(150, 201, 255, 1)',
-						borderWidth: 3
-					}
+          {
+            label: 'Waste to Energy',
+            data: pluck(rows, 'Waste to Energy'),
+            backgroundColor: 'rgba(150, 201, 255, 0.5)',
+            borderColor: 'rgba(150, 201, 255, 1)',
+            borderWidth: 3
+          }
         ]
-			},
-			options: {
-      	scales: {
+      },
+      options: {
+        scales: {
           yAxes: [{
             stacked: true,
-						scaleLabel: {
-							labelString: 'Tons of Waste',
-							display: true
-						}
+            scaleLabel: {
+              labelString: 'Tons of Waste',
+              display: true
+            }
           }]
-				},
-				title: {
-					display: true,
-					text: 'Citywide Waste Diversion Rate',
-					postion: 'top'
-				}
-  		}
+        },
+        title: {
+          display: true,
+          text: 'Citywide Waste Diversion Rate',
+          postion: 'top'
+        }
+      }
     }
 
-    new Chart(getScriptParent(), opts)
+		new Chart(getScriptParent(), opts)
   })()
   </script>
 </canvas>

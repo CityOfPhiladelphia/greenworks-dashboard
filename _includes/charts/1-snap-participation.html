@@ -21,28 +21,28 @@
             data: pluck(rows, 'Philly Food Bucks'),
             backgroundColor: 'rgba(150, 201, 255, 0.7)',
             borderColor: 'rgba(150, 201, 255, 1)',
-						borderWidth: 0
+            borderWidth: 0
           }
         ]
-			},
-	  	options: {
+      },
+      options: {
         scales: {
           xAxes: [{
-              stacked: true
+            stacked: true
           }],
           yAxes: [{
-              stacked: true,
+            stacked: true,
           }]
-				},
-				title: {
-						display: true,
-						text: 'SNAP Participation at Markets',
-						position: 'top'
+        },
+        title: {
+          display: true,
+          text: 'SNAP Participation at Markets',
+          position: 'top'
         }
       }
     }
 
     new Chart(getScriptParent(), opts)
-  })()
+  }) ()
   </script>
 </canvas>
